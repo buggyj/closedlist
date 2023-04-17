@@ -1,0 +1,5 @@
+title: $:/bj/closedlistclipoptions
+
+menuShowTitle:true
+tags:((*@toCommas(@tags)*))
+noautoextratags:yes

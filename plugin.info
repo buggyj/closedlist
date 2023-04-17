@@ -1,0 +1,11 @@
+{
+	"title": "$:/plugins/bj/closedlist",
+	"description": "view and edit subtiddlers lists",
+	"author": "JeffreyWilkinson aka bj",
+	"tags": "$:/plugins/bj/typestemplate $:/plugins/bj/visualeditor",
+	"version": "2.1.2",
+	"list": "license readme",
+	"core-version": ">=5.2.1",
+	"source": "https://github.com/buggyj/TW5-other",
+	"plugin-type": "plugin"
+}

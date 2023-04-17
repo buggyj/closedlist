@@ -1,0 +1,7 @@
+title: $:/bj/AddsubtagRule
+
+\rules only table wikilink prettylink
+
+|!Title|!Body|!Tags|!Fields|!Initvals|!Modes|
+|((*@tiddler*))->((*@subtiddler*))|||[[$:/bj/AddsubBreakoutRule]]||modify|
+|((*@tiddler*))|||[[$:/bj/AddsubSwitchRule]]||add modify|

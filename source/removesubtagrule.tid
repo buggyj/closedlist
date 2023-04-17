@@ -1,0 +1,8 @@
+title: $:/bj/RemovesubtagRule
+
+\rules only table wikilink prettylink
+
+|!Title|!Body|!Tags|!Fields|!Initvals|!Modes|
+|((*@tiddler*))->((*@subtiddler*))|||[[$:/bj/RemoveSubTagDo]]||modify|
+|((*@tiddler*))|||[[$:/bj/SetTagDo]]||add modify|
+

@@ -1,0 +1,5 @@
+list-before: $:/config/ViewTemplateBodyFilters/system
+tags: $:/tags/ViewTemplateBodyFilter
+title: $:/bj/closedlist/view/cascade
+
+[applicationtype[closedlist]then[$:/bj/closedlist/ViewTemplate/body/list]]

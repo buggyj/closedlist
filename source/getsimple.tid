@@ -1,0 +1,8 @@
+title: getsimple
+type: application/x-bclip
+
+$text:=((*@tiddler*))->((*@subtiddler*))!!((*@field*))
+$title=((*@title*))
+
+
+

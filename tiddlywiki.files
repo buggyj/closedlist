@@ -1,0 +1,19 @@
+{
+	"tiddlers": [{
+		"file": "license.tid",
+		"fields": {
+			"type": "text/plain",
+			"title": "$:/plugins/bj/closedlist/license"
+		}
+	},
+	{
+		"file": "readme.tid",
+		"fields": {
+			"type": "text/plain",
+			"title": "$:/plugins/bj/closedlist/readme"
+		}
+	}],
+	 "directories": [
+		"source"
+	 ]
+}
