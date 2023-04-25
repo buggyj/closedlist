@@ -1,0 +1,12 @@
+title: $:/bj/NewListDo
+type: application/x-bclip
+
+#applicationtype=closedlist
+#suffix=
+#NewList=((*@currentTiddler*))((*#suffix*))
+
+$title=((*@newtitleplusplus(#NewList,#suffix)*))
+
+$type=application/json
+$applicationtype=((*#applicationtype*))
+$ctags:=bj/InitialCTags

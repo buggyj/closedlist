@@ -3,5 +3,5 @@ title: $:/bj/AddsubToptagRule
 \rules only table wikilink prettylink
 
 |!Title|!Body|!Tags|!Fields|!Initvals|!Modes|
-|((*@tiddler*))|||[[$:/bj/AddsubBreakTopoutRule]]||add append|
+|((*@tiddler*))|||[[$:/bj/AddsubBreakTopoutDo]]||add append|
 

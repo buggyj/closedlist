@@ -23,7 +23,7 @@ title: $:/bj/closedlist/listviewremovetag
 <$reveal state=<<parentappend "$:/temp/priv/">> text={{!!title}} type="nomatch">
     <$link><$view  tiddler=<<parentTiddler>> subtiddler=<<currentTiddler>> field="title"/></$link>
 <$button  class="tc-btn-invisible" >
-{{$:/core/images/cancel-button}}<$action-tiddlydo  $tabletid="$:/bj/closedlist" $catname="removetag" subtiddler=<<currentTiddler>> tiddler=<<parentTiddler>> tag=<<subtag>>/>
+{{$:/core/images/cancel-button}}<$action-tiddlydo  $tabletid="$:/bj/closedlist" $catname="removetagsimple" subtiddler=<<currentTiddler>> tiddler=<<parentTiddler>> tag=<<subtag>>/>
 </$button>
 </$reveal>
 </$linkcatcher>

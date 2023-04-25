@@ -1,0 +1,5 @@
+title: $:/bj/AddsubSwitchRule
+type: application/x-bclip
+
+#notag=notag
+$state=((*$state==#notag*??*@newtag*??*@abort()*))

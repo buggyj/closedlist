@@ -3,4 +3,4 @@ title: $:/bj/RemoveTopsubRule
 \rules only table wikilink prettylink
 
 |!Title|!Body|!Tags|!Fields|!Initvals|!Modes|
-|((*@tiddler*))|||{"$ctags":"((*@subtractset($ctags,@tag)*))"}||add append|
+|((*@tiddler*))|||{"$ctags":"((*@inset($ctags,@tag)*??*@subtractset($ctags,@tag)*??*@exit()*))"}||add append|

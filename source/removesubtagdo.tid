@@ -1,0 +1,5 @@
+title: $:/bj/RemoveSubTagDo
+type: application/x-bclip
+
+$tags=((*@inset($tags,@tag)*??*@subtractset($tags,@tag)*??*@exit()*))
+%subtags=((*$tags*))

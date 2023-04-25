@@ -1,0 +1,4 @@
+title: $:/bj/AddsubBreakTopoutRule
+type: application/x-bclip
+
+$ctags=((*@addsets($ctags,@newtag)*))

@@ -5,7 +5,7 @@ title: $:/bj/closedlist
 |MakeNewList|||[[$:/bj/NewListRule]]||
 |addtag|||[[$:/bj/AddsubtagRule]]||
 |removetag|||[[$:/bj/RemovesubtagRule]]||
+|removetagsimple|||[[$:/bj/RemovesubtagSimpleRule]]||
 |addtoptag|||[[$:/bj/AddsubToptagRule]]||
 |removetoptag|||[[$:/bj/RemoveTopsubRule]]||
-
 

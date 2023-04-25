@@ -1,0 +1,4 @@
+title: $:/bj/SetTagDo
+type: application/x-bclip
+
+$state=((*$state==@tag*??*@headlist(%subtags,notag)*??*@abort()*))
