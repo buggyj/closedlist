@@ -1,0 +1,6 @@
+title: $:/bj/ClosedPostItRule
+
+\rules only table wikilink prettylink
+
+|!Title|!Body|!Tags|!Fields|!Initvals|!Modes|
+|((*@currentTiddler*))|||[[$:/bj/ClosedPostItDo]]||add modify|

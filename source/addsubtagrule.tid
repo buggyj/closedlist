@@ -4,4 +4,5 @@ title: $:/bj/AddsubtagRule
 
 |!Title|!Body|!Tags|!Fields|!Initvals|!Modes|
 |((*@tiddler*))->((*@subtiddler*))|||[[$:/bj/AddsubBreakoutRule]]||modify|
-|((*@tiddler*))|||[[$:/bj/AddsubSwitchRule]]||add modify|
+|((*@tiddler*))|||||add modify|
+|$:/temp/((*@tiddler*))|||[[$:/bj/AddsubSwitchRule]]||add modify|

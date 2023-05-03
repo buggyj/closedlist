@@ -1,0 +1,6 @@
+title: $:/bj/NewClosedTicketRule
+
+\rules only table wikilink prettylink 
+
+|!Title|!Body|!Tags|!Fields modifiers|!field initials|!Modes|
+|null|{"tiddlers":{}}||[[$:/bj/NewClosedTicketDo]]||add inc open|

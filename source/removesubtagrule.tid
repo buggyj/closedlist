@@ -4,5 +4,6 @@ title: $:/bj/RemovesubtagRule
 
 |!Title|!Body|!Tags|!Fields|!Initvals|!Modes|
 |((*@tiddler*))->((*@subtiddler*))|||[[$:/bj/RemoveSubTagDo]]||modify|
-|((*@tiddler*))|||[[$:/bj/SetTagDo]]||add modify|
+|((*@tiddler*))|||||add modify|
+|$:/temp/((*@tiddler*))|||[[$:/bj/SetTagDo]]||add modify|
 

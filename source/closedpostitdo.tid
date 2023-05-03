@@ -1,0 +1,8 @@
+title: $:/bj/ClosedPostItDo
+type: application/x-bclip
+
+#prompt=
+#now=$((*@now*))
+#postit=((*@userinput(#prompt)*))
+#null=((*@exit(#postit)*))
+@(#now)=((*#postit*))

@@ -1,5 +1,5 @@
-title: $:/bj/closedlist/edit/cascade
+title: $:/bj/closedticket/edit/cascade
 list-before: $:/config/EditTemplateBodyFilters/canonical-uri
 tags: $:/tags/EditTemplateBodyFilter $:/config/StoryTiddlerTemplateFilters/draft
 
-[applicationtype[closedlist]then[$:/bj/closedlist/EditTemplate/body/list]]
+[applicationtype[closedticket]then[$:/bj/closedlist/EditTemplate/body/list]]

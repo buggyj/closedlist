@@ -3,9 +3,10 @@ title: $:/bj/closedlist
 |!Category|!Tip|!Tags|!Rule Tid|!Modes|
 |MakeDock|||[[$:/bj/closedlistDockRule]]||
 |MakeNewList|||[[$:/bj/NewListRule]]||
+|MakeNewTicket|||[[$:/bj/NewClosedTicketRule]]||
+|Postit|||[[$:/bj/ClosedPostItRule]]||
 |addtag|||[[$:/bj/AddsubtagRule]]||
 |removetag|||[[$:/bj/RemovesubtagRule]]||
 |removetagsimple|||[[$:/bj/RemovesubtagSimpleRule]]||
 |addtoptag|||[[$:/bj/AddsubToptagRule]]||
 |removetoptag|||[[$:/bj/RemoveTopsubRule]]||
-

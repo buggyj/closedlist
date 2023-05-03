@@ -5,11 +5,11 @@ title: $:/bj/closedlist/viewtemplate/notag
 $(currentTiddler)$$b$
 \end
 
-<$vars parentTiddler=<<addfld "!!state">>>
+<$vars listTiddler="notag">
 <$set name="color" filter="[all[current]field:state<listTiddler>]" value="red" emptyValue="grey">
 <span class="tc-tag-list-item">
 <$set name="transclusion" value=<<listTiddler>>>
-<$macrocall $name="tag-pill-body" tag=<<listTiddler>> icon={{!!icon}} colour=<<color>> palette={{$:/palette}} element-tag="""$button""" element-attributes="""set= <<parentTiddler>> setTo=<<listTiddler>> tag='span'"""/>
+<$macrocall $name="tag-pill-body" tag=<<listTiddler>> icon={{!!icon}} colour=<<color>> palette={{$:/palette}} element-tag="""$button""" element-attributes="""set= <<addfld "!!state">> setTo=<<listTiddler>> tag='span'"""/>
 </$set>
 </span>
 </$set>

@@ -1,4 +1,6 @@
 title: $:/bj/SetTagDo
 type: application/x-bclip
 
+#all=Αll
+$state=((*!@exists($state)*??*#all*??*@abort()*))
 $state=((*$state==@tag*??*@headlist(%subtags,notag)*??*@abort()*))

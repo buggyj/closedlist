@@ -1,0 +1,14 @@
+title: $:/bj/NewClosedTicketDo
+type: application/x-bclip
+
+#applicationtype=closedticket
+
+#NewList=((*@parentTicket*))
+
+$title=((*@newtitleplusplus(#NewList)*))
+$caption=((*@tickettitle*))
+$tags=((*@parentTicket*)) 
+$type=application/json
+
+$applicationtype=((*#applicationtype*))
+$ctags:=bj/InitialCTags

@@ -1,5 +1,14 @@
 title: $:/bj/closedlist/ViewTemplate/body/list
 
+\define SelectTagDo()
+#state:=((*@stateTiddler*))!!state
+#all=Αll
+$text=((*@exists(#state)*??*#state*??*#all*))
+$title=subtag
+\end
+
+\define stateTiddler() $:/temp/$(currentTiddler)$
+
 \define removesubtag-actions()
 <$action-tiddlydo  $tabletid="$:/bj/closedlist" $catname="removetoptag" tiddler=<<currentTiddler>> tag=<<actionTiddler>>/>
 \end
@@ -13,9 +22,11 @@ Dock
 </$button>
 
 <!---note that I have use capital alpha for the 'All' button (it looks like a captial A) to allow 'All' to be used as a tag--->
-<$vars listTiddler="Αll">{{||$:/bj/closedlist/viewtemplate/notag}}</$vars>
-<$vars listTiddler="notag">{{||$:/bj/closedlist/viewtemplate/notag}}</$vars>
-<$list filter="[enlist{!!ctags}]" variable="listTiddler">{{||$:/bj/closedlist/viewtemplate/tags}}</$list>
+<$vars currentTiddler=<<stateTiddler>> empty=""""""> 
+{{||$:/bj/closedlist/viewtemplate/notagdefault}}
+{{||$:/bj/closedlist/viewtemplate/notag}}
+</$vars>
+<$list filter="[enlist{!!ctags}]" variable="listTiddler"><$vars currentTiddler=<<stateTiddler>> empty=""""""> {{||$:/bj/closedlist/viewtemplate/tags}}</$vars></$list>
 <$droppable actions=<<addsubtag-actions>>>
 	{{$:/core/images/new-button}}
 </$droppable>
@@ -24,9 +35,10 @@ Dock
 </$droppable> 
 
 <$vars parentTiddler=<<currentTiddler>> empty="""""">
-<$set name="subtag" filter="[all[current]field:state[notag]]" value="{{!!null}}" emptyValue={{!!state}}>
+<$vars currentTiddler=<<stateTiddler>> empty=""""""> 
+<$do-transform  $doThis=<<SelectTagDo>> :stateTiddler=<<currentTiddler>>>
 
-<$reveal type="match" state="!!state" text="Αll">
+<$reveal type="match" state="!!state" text="Αll" default="Αll">
 <<closedlisttimeold format:"DDth MMM YYYY" dateField:"modified" template:"$:/bj/closedlist/listview">>
 </$reveal>
 <$reveal type="match" state="!!state" text="notag">
@@ -36,6 +48,10 @@ Dock
 <$reveal type="nomatch" state="!!state" text="Αll">
 <$macrocall $name="closedlisttime" format="DDth MMM YYYY" dateField="modified" template="$:/bj/closedlist/listviewremovetag" subtag=<<subtag>> />
 </$reveal></$reveal>
-</$set>
+</$do-transform>
 </$vars>
+</$vars>
+
+
+
 

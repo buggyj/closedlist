@@ -1,0 +1,25 @@
+title: $:/bj/closedlist/viewtemplate/notagdefault
+
+\whitespace trim
+\define postfix(b)
+$(currentTiddler)$$b$
+\end
+
+\define setColorDo()
+#null=
+#state:=((*@current*))!!state
+#state=((*!@exists(#state)*??*#null*??*@abort()*))
+#red=red
+#grey=grey
+$text=((*#state==@listTiddler*??*#red*??*#grey*))
+$text=((*#state==#null*??*#red*??*@abort()*))
+$title=color
+\end
+
+<$vars listTiddler="Αll">
+<$do-transform  $doThis=<<setColorDo>> :current=<<currentTiddler>> listTiddler=<<listTiddler>>>
+<span class="tc-tag-list-item">
+<$macrocall $name="tag-pill-body" tag=<<listTiddler>> icon={{!!icon}} colour=<<color>> palette={{$:/palette}} element-tag="""$button""" element-attributes="""set= <<postfix "!!state">> setTo=<<listTiddler>> tag='span'"""/>
+</span>
+</$do-transform>
+</$vars>
