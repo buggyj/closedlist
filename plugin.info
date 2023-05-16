@@ -3,7 +3,7 @@
 	"description": "view and edit subtiddlers lists",
 	"author": "JeffreyWilkinson aka bj",
 	"tags": "$:/plugins/bj/typestemplate $:/plugins/bj/visualeditor",
-	"version": "2.1.6",
+	"version": "2.1.7",
 	"list": "license readme",
 	"core-version": ">=5.2.1",
 	"source": "https://github.com/buggyj/",
