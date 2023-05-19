@@ -1,0 +1,5 @@
+list-before: $:/config/ViewTemplateBodyFilters/system
+tags: $:/tags/ViewTemplateBodyFilter
+title: $:/bj/closedticket/view/cascade
+
+[applicationtype[closedticket]then[$:/bj/closedticket/ViewTemplate/details]]
